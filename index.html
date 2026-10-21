@@ -28,6 +28,7 @@ button,input,select{font:inherit}button,a{ -webkit-tap-highlight-color:transpare
 <div class="tabs" role="group" aria-label="Competition status">
 <button type="button" class="tab" data-view="action" aria-pressed="true">Worth checking now</button>
 <button type="button" class="tab" data-view="all" aria-pressed="false">All competitions</button>
+<button type="button" class="tab" data-view="watch" aria-pressed="false">Future calls</button>
 <button type="button" class="tab" data-view="saved" aria-pressed="false">Saved <span id="savedCount"></span></button>
 <button type="button" class="tab" data-view="closed" aria-pressed="false">Past editions</button>
 </div>
@@ -48,7 +49,7 @@ const getMatch=e=>(e.title+" "+e.organizer+" "+e.discipline+" "+e.eligibility+" 
 const savedKey=e=>e.source+"|"+e.title;
 function render(){
  const q=$("q").value.toLowerCase().trim(),field=$("field").value,review=$("review").value,sort=$("sort").value;
- const shown=records.filter(e=>(view==="all"||view==="saved"&&saved.has(savedKey(e))||view==="closed"&&state(e)==="closed"||view==="action"&&(state(e)==="open"||state(e)==="upcoming"||state(e)==="watch"))&&(!field||e.discipline===field)&&(!q||getMatch(e).includes(q))&&(!review||String(!!e.reviewed)===review));
+ const shown=records.filter(e=>(view==="all"||view==="saved"&&saved.has(savedKey(e))||view==="closed"&&state(e)==="closed"||view==="watch"&&state(e)==="watch"||view==="action"&&(state(e)==="open"||state(e)==="upcoming"))&&(!field||e.discipline===field)&&(!q||getMatch(e).includes(q))&&(!review||String(!!e.reviewed)===review));
  shown.sort((a,b)=>sort==="name"?a.title.localeCompare(b.title):sort==="field"?a.discipline.localeCompare(b.discipline):({open:0,upcoming:1,watch:2,closed:3}[state(a)]-({open:0,upcoming:1,watch:2,closed:3}[state(b)]))||(a.deadline||"9999").localeCompare(b.deadline||"9999")||a.title.localeCompare(b.title));
  $("resultCount").innerHTML="<strong>"+shown.length+"</strong> matches from "+records.length+" tracked entries";
  $("savedCount").textContent=saved.size?"("+saved.size+")":"";
