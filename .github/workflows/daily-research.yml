@@ -1,5 +1,10 @@
 name: Daily competition research
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'scripts/daily_research.py'
+      - '.github/workflows/daily-research.yml'
   schedule:
     - cron: '23 5 * * *'
   workflow_dispatch:
