@@ -1,0 +1,10 @@
+{
+  "run_date_utc": "2026-10-21",
+  "records": 76,
+  "official_sources_checked": 52,
+  "sources_reachable": 44,
+  "sources_blocked": 0,
+  "deadlines_expired_this_run": 0,
+  "unverified_discovery_leads": 5,
+  "note": "Automated HTTP and RSS checks do NOT verify contest eligibility/open calls. Review official rules manually."
+}
