@@ -1,68 +1,352 @@
 <!doctype html>
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#f8faf8">
-<meta name="description" content="International chip, IC, FPGA, nanoelectronics, RF, sensor and hardware competitions. Official sources, eligibility and deadlines.">
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7f8f5">
+<meta name="description" content="Find international microelectronics, ASIC, FPGA, sensors, photonics and hardware design competitions with source links and eligibility details.">
 <title>Competition Atlas — Micro & Nanoelectronics</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;450;500;550;600&display=swap" rel="stylesheet">
 <style>
-:root{--paper:#f7f9f7;--ink:#132720;--muted:#65766d;--forest:#164c39;--line:#dee6df;--white:#fff;--mint:#e5f4e9;--amber:#945820}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 Outfit,ui-sans-serif,system-ui,sans-serif;letter-spacing:-.004em}
-button,input,select{font:inherit}button,a{ -webkit-tap-highlight-color:transparent}a{color:inherit}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #70ac87;outline-offset:2px}
-.wrap{max-width:1192px;margin:0 auto;padding:0 30px}.top{height:70px;border-bottom:1px solid var(--line);background:#fafcf9e8;position:sticky;top:0;z-index:5;backdrop-filter:blur(14px)}.topbar{height:100%;display:flex;align-items:center;justify-content:space-between;gap:18px}.logo{font-weight:800;font-size:19px;letter-spacing:-.045em;text-decoration:none}.logo i{display:inline-block;width:12px;height:12px;background:#269b68;border-radius:3px;transform:rotate(-20deg);margin-right:11px}.topnav{display:flex;gap:26px;align-items:center}.topnav a{font-size:13px;text-decoration:none;color:#597064}.topnav a:hover{color:var(--ink)}
-.hero{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(245px,.65fr);gap:40px;padding:75px 0 60px;align-items:end}.eyebrow{display:inline-flex;gap:9px;align-items:center;color:var(--forest);font-size:12px;font-weight:700;letter-spacing:.09em;text-transform:uppercase}.eyebrow:before{content:"";height:7px;width:7px;border-radius:50%;background:#24a16a}.hero h1{font-size:clamp(43px,5.3vw,74px);line-height:1.03;max-width:760px;letter-spacing:-.072em;margin:17px 0 22px;font-weight:700}.hero p{color:#62766a;max-width:610px;font-size:17px;margin:0}.overview{border-left:1px solid var(--line);padding-left:28px;display:grid;grid-template-columns:1fr 1fr;gap:25px}.metric strong{font-size:35px;line-height:1;letter-spacing:-.055em;font-weight:700;display:block}.metric span{color:var(--muted);font-size:12px;display:block;margin-top:8px}.line{border-top:1px solid var(--line)}
-.section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;padding:38px 0 18px}.section-head h2{font-size:26px;line-height:1.1;letter-spacing:-.045em;margin:0 0 5px}.subtitle{font-size:13px;color:var(--muted);margin:0}.export{border:1px solid var(--line);color:#405b4d;padding:10px 14px;background:#fff;border-radius:8px;cursor:pointer}
-.tabs{display:flex;gap:7px;overflow:auto;white-space:nowrap;padding:4px 0 16px}.tab{background:transparent;color:#52685c;border:1px solid transparent;border-radius:8px;padding:9px 15px;cursor:pointer}.tab[aria-pressed="true"]{background:#173f31;color:#fff}
-.filters{display:grid;grid-template-columns:minmax(200px,2.1fr) repeat(3,minmax(125px,1fr));gap:10px;margin-bottom:19px}.filters input,.filters select{width:100%;height:46px;background:#fff;border:1px solid #d7e3d9;border-radius:9px;color:#25382d;padding:0 14px;min-width:0}.filters input::placeholder{color:#839086}.results-head{display:flex;justify-content:space-between;gap:18px;align-items:center;margin:0 0 14px;font-size:13px;color:#63796b}.results-head strong{color:#233d2f}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;padding-bottom:55px}
-.item{background:var(--white);border:1px solid var(--line);border-radius:13px;padding:23px 24px 20px;display:flex;flex-direction:column;min-width:0;box-shadow:0 3px 11px #17352405;transition:border-color .18s,transform .18s}.item:hover{border-color:#a7c9b5;transform:translateY(-1px)}
-.item-top{display:flex;justify-content:space-between;gap:10px;align-items:center}.domain{font-size:11px;font-weight:650;color:#53806a;letter-spacing:.045em;text-transform:uppercase}.status{font-size:11px;border-radius:20px;padding:4px 9px;font-weight:600;white-space:nowrap;background:#eef2ee;color:#69766d}.status.open{background:#dff1e3;color:#276242}.status.upcoming{background:#ebefff;color:#4b5fa2}.status.closed{background:#f5efeb;color:#906d55}.item h3{font-size:21px;letter-spacing:-.037em;line-height:1.24;font-weight:650;margin:16px 0 6px}.organizer{margin:0;color:#7a8b80;font-size:12px}.facts{display:grid;grid-template-columns:1fr 1fr;gap:9px 16px;padding:17px 0;border-bottom:1px solid #edf1ed;margin-top:8px}.fact small{display:block;color:#84918a;font-size:11px;margin-bottom:3px}.fact span{display:block;color:#304339;font-size:13px;font-weight:500}.note{font-size:13px;color:#576e60;margin:13px 0 11px;line-height:1.55;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}.warn{font-size:12px;color:#915f35;background:#fcf7ef;padding:10px 12px;border-radius:7px;margin:0 0 14px}
-.action{display:flex;gap:9px;align-items:center;margin-top:auto;padding-top:10px}.source{flex:1;text-align:center;border:1px solid #224e37;border-radius:8px;background:#194d36;color:#fff;padding:10px;text-decoration:none;font-size:12px;font-weight:650}.source:hover{background:#0d3d29}.save{border:1px solid #d3ded5;color:#476650;background:#fff;border-radius:8px;padding:10px 13px;cursor:pointer;min-width:85px;font-size:12px}.save.saved{border-color:#7caa87;background:#edf6ee;color:#245f39}.extra{border-top:1px solid #edf1ed;margin-top:14px;padding-top:9px}.extra summary{font-size:12px;color:#346447;cursor:pointer;font-weight:600}.extra dl{margin:12px 0 0;display:grid;gap:10px}.extra dt{font-size:11px;color:#829186}.extra dd{font-size:12px;color:#4d6255;margin:0}.empty{grid-column:1/-1;text-align:center;border:1px dashed #c9d8cb;border-radius:12px;padding:64px 20px;color:#617265}
-.smallprint{border-top:1px solid var(--line);padding:30px 0 60px;color:#75857b;font-size:12px}.smallprint a{color:#245a3d}.smallprint p{max-width:920px}.footerline{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
-@media(max-width:900px){.hero{grid-template-columns:1fr;padding:55px 0 35px}.overview{padding:20px 0 0;border-left:0;border-top:1px solid var(--line);grid-template-columns:repeat(4,1fr)}.filters{grid-template-columns:1fr 1fr}.topnav a:first-child{display:none}}
-@media(max-width:660px){.wrap{padding:0 16px}.top{height:62px}.topnav{gap:12px}.topnav a{font-size:12px}.hero{padding-top:45px;gap:25px}.hero h1{font-size:43px}.hero p{font-size:15px}.overview{grid-template-columns:1fr 1fr;gap:23px}.grid{grid-template-columns:1fr}.filters{grid-template-columns:1fr 1fr}.filters input{grid-column:1/-1}.filters select:last-child{grid-column:1/-1}.section-head{align-items:center}.section-head h2{font-size:23px}.item{padding:19px}.topnav a:nth-child(2){display:none}}
-</style></head><body>
-<header class="top"><div class="wrap topbar"><a class="logo" href="#"><i></i>Competition Atlas</a><nav class="topnav"><a href="#browse">Explore</a><a href="https://github.com/aminemons/competitionsnano" target="_blank" rel="noopener">GitHub ↗</a><a href="https://aminemons.github.io/stagesmicroelectronics-scholarships-professors-contacts/" target="_blank" rel="noopener">Opportunity Atlas ↗</a></nav></div></header>
-<main class="wrap"><section class="hero"><div><div class="eyebrow">International hardware & research challenges</div><h1>Build something that matters.</h1><p>Integrated circuits, FPGA, semiconductors, sensors, photonics and more. Real organizers, actual entry constraints and one place to find the next challenge.</p></div><div id="stats" class="overview" aria-label="Competition statistics"></div></section>
-<div class="line"></div><section id="browse"><div class="section-head"><div><h2>Explore competitions</h2><p class="subtitle">Follow a promising challenge from first idea to submission.</p></div><button class="export" id="export">Export CSV ↓</button></div>
-<div class="tabs" role="group" aria-label="Competition status">
-<button type="button" class="tab" data-view="action" aria-pressed="true">Worth checking now</button>
-<button type="button" class="tab" data-view="all" aria-pressed="false">All competitions</button>
-<button type="button" class="tab" data-view="watch" aria-pressed="false">Future calls</button>
-<button type="button" class="tab" data-view="saved" aria-pressed="false">Saved <span id="savedCount"></span></button>
-<button type="button" class="tab" data-view="closed" aria-pressed="false">Past editions</button>
-</div>
-<div class="filters"><input id="q" type="search" placeholder="Search ASIC, FPGA, MEMS, awards…" aria-label="Search competitions"><select id="field" aria-label="Technical field"><option value="">All technical fields</option></select><select id="review" aria-label="Evidence"><option value="">All source statuses</option><option value="true">Reviewed rules</option><option value="false">Needs manual review</option></select><select id="sort" aria-label="Sort"><option value="deadline">Nearest deadlines</option><option value="field">Technical field</option><option value="name">A to Z</option></select></div>
-<div class="results-head"><span id="resultCount" aria-live="polite"></span><span>Student eligibility is never assumed</span></div><div id="cards" class="grid"></div></section></main>
-<footer class="wrap smallprint"><div class="footerline"><strong>Competition Atlas · Micro & Nanoelectronics</strong><span id="updated">Research record · October 2026</span></div><p>Built for a five-year integrated engineering curriculum: semiconductor physics, IC design, digital systems, RF, nanotechnologies and optoelectronics. A competition appearing here does not establish admission, prize eligibility, travel reimbursement or visa approval. “Reviewed” means its organizer's rules were examined for the stated edition; always check the official page immediately before applying. Saved entries stay only in this browser.</p></footer>
-<script>
-const $=id=>document.getElementById(id);
-let records=[],view="action",saved=new Set();
-try{saved=new Set(JSON.parse(localStorage.getItem("competition-atlas-saved")||"[]"))}catch{}
-const clean=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-const today=()=>new Date().toISOString().slice(0,10);
-const state=e=>e.deadline&&e.deadline<today()?"closed":e.status==="closed"?"closed":e.status==="open"&&e.reviewed?"open":e.status==="upcoming"&&e.reviewed?"upcoming":"watch";
-const statusLabel={open:"Call active",upcoming:"Opens soon",watch:"Track next call",closed:"Past deadline"};
-const pretty=d=>!d?"Not announced":new Date(d+"T12:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"});
-const brief=e=>e.requirements||e.project||"See the official programme for the submission format and requirements.";
-const getMatch=e=>(e.title+" "+e.organizer+" "+e.discipline+" "+e.eligibility+" "+(e.project||"")+" "+e.requirements).toLowerCase();
-const savedKey=e=>e.source+"|"+e.title;
-function render(){
- const q=$("q").value.toLowerCase().trim(),field=$("field").value,review=$("review").value,sort=$("sort").value;
- const shown=records.filter(e=>(view==="all"||view==="saved"&&saved.has(savedKey(e))||view==="closed"&&state(e)==="closed"||view==="watch"&&state(e)==="watch"||view==="action"&&(state(e)==="open"||state(e)==="upcoming"))&&(!field||e.discipline===field)&&(!q||getMatch(e).includes(q))&&(!review||String(!!e.reviewed)===review));
- shown.sort((a,b)=>sort==="name"?a.title.localeCompare(b.title):sort==="field"?a.discipline.localeCompare(b.discipline):({open:0,upcoming:1,watch:2,closed:3}[state(a)]-({open:0,upcoming:1,watch:2,closed:3}[state(b)]))||(a.deadline||"9999").localeCompare(b.deadline||"9999")||a.title.localeCompare(b.title));
- $("resultCount").innerHTML="<strong>"+shown.length+"</strong> matches from "+records.length+" tracked entries";
- $("savedCount").textContent=saved.size?"("+saved.size+")":"";
- $("cards").innerHTML=shown.map(e=>{let s=state(e),k=savedKey(e),isSaved=saved.has(k);return '<article class="item"><div class="item-top"><span class="domain">'+clean(e.discipline)+'</span><span class="status '+s+'">'+statusLabel[s]+'</span></div><h3>'+clean(e.title)+'</h3><p class="organizer">'+clean(e.organizer)+'</p><div class="facts"><div class="fact"><small>Deadline</small><span>'+pretty(e.deadline)+'</span></div><div class="fact"><small>Rules</small><span>'+(e.reviewed?'Edition checked':'Recheck organizer')+'</span></div></div><p class="note">'+clean(brief(e))+'</p>'+(e.eligibility&&/not.*(confirmed|eligible)|india only|years 1.3|not automatically/i.test(e.eligibility)?'<p class="warn">'+clean(e.eligibility)+'</p>':'')+'<div class="action"><a class="source" target="_blank" rel="noopener noreferrer" href="'+clean(e.source)+'">Official source ↗</a><button type="button" class="save '+(isSaved?'saved':'')+'" data-key="'+encodeURIComponent(k)+'" aria-label="'+(isSaved?'Remove saved competition':'Save competition')+'">'+(isSaved?'★ Saved':'☆ Save')+'</button></div><details class="extra"><summary>Requirements, eligibility & award</summary><dl><div><dt>Eligibility</dt><dd>'+clean(e.eligibility)+'</dd></div><div><dt>Award / travel</dt><dd>'+clean(e.funding)+'</dd></div><div><dt>Scope / team</dt><dd>'+clean(e.scope||e.format||'Refer to organizer')+'</dd></div>'+(e.project?'<div><dt>Project direction</dt><dd>'+clean(e.project)+'</dd></div>':'')+(e.risk?'<div><dt>Important caveat</dt><dd>'+clean(e.risk)+'</dd></div>':'')+'<div><dt>Evidence</dt><dd>'+clean(e.evidence)+'</dd></div></dl></details></article>'}).join("")||'<div class="empty">Nothing matches these filters. Try “All competitions” or a different field.</div>';
- document.querySelectorAll(".save").forEach(b=>b.onclick=()=>{const k=decodeURIComponent(b.dataset.key);saved.has(k)?saved.delete(k):saved.add(k);try{localStorage.setItem("competition-atlas-saved",JSON.stringify([...saved]))}catch{}render()});
+:root{color-scheme:light;--canvas:#fafbf9;--side:#f4f6f2;--white:#fff;--ink:#23342b;--text:#36483c;--secondary:#526359;--border:#dfe6df;--soft:#eef2eb;--accent:#365a47;--accent-wash:#e4eee5;--focus:#276745}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--canvas);color:var(--ink);font-family:Outfit,system-ui,-apple-system,"Segoe UI",sans-serif;font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+button,input,select{font:inherit}
+button{cursor:pointer}
+a{color:inherit}
+button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #568c6c;outline-offset:3px}
+[hidden]{display:none!important}
+::selection{background:#dcebe0;color:#1d3528}
+.app{min-height:100vh}
+.sidebar{position:fixed;left:0;top:0;bottom:0;width:254px;background:var(--side);border-right:1px solid var(--border);padding:30px 17px 20px;display:flex;flex-direction:column;z-index:30}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none;margin:3px 10px 54px}
+.brand-mark{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;background:#345e49;color:#fff;flex-shrink:0}
+.brand-mark svg{width:20px;height:20px}
+.brand-name{font-size:16px;line-height:1.17;letter-spacing:-.014em;font-weight:550;color:#25382c}
+.brand-desc{font-size:12px;color:#526359;line-height:1.4;margin-top:5px}
+.side-nav{display:grid;gap:5px}
+.nav-item{width:100%;border:0;background:transparent;color:#4c5f52;display:flex;gap:13px;align-items:center;text-align:left;min-height:43px;border-radius:9px;padding:9px 11px;transition:background-color .18s,color .18s}
+.nav-item svg{width:18px;height:18px;flex-shrink:0;stroke-width:1.7}
+.nav-item span:nth-child(2){flex:1}
+.nav-item:hover{background:#eaeee8;color:#274333}
+.nav-item[aria-current="page"]{background:var(--accent-wash);color:#244c35;font-weight:500}
+.nav-count{font-size:13px;color:#5b6f60;font-weight:400;font-variant-numeric:tabular-nums}
+.side-footer{margin-top:auto;padding:0 10px;color:#5b6d61;font-size:13px}
+.side-link{display:flex;align-items:center;gap:12px;padding:11px 0;color:#526359;text-decoration:none}
+.side-link:hover{color:#1f4931}
+.side-link svg{width:17px;height:17px;stroke-width:1.7}
+.side-date{border-top:1px solid #dbe3da;margin-top:23px;padding-top:20px;font-size:12px;color:#647368;line-height:1.6}
+.main{margin-left:254px;min-width:0}
+.content{max-width:1040px;padding:0 58px 90px;margin:0 auto}
+.mobile-top{display:none}
+.topline{display:flex;justify-content:flex-end;align-items:center;min-height:62px;border-bottom:1px solid #e8ede6}
+.topline span{font-size:13px;color:#5d6d61}
+.topline .live-dot{display:inline-block;width:7px;height:7px;background:#53856a;border-radius:50%;margin-right:9px}
+.intro{padding:51px 0 39px}
+.intro h1{font-size:clamp(34px,3.5vw,43px);font-weight:500;line-height:1.18;letter-spacing:-.034em;margin:0 0 10px;color:#26372b}
+.intro p{color:var(--secondary);margin:0;max-width:610px;font-size:16px;line-height:1.62}
+.workspace-head{display:flex;align-items:baseline;justify-content:space-between;gap:20px;padding-bottom:17px;border-bottom:1px solid var(--border)}
+.workspace-head h2{font-size:21px;font-weight:500;letter-spacing:-.02em;margin:0}
+.subcount{color:#556559;font-size:14px;white-space:nowrap}
+.toolbar{display:flex;gap:10px;margin:23px 0 0}
+.searchbox{min-width:0;display:flex;align-items:center;gap:11px;height:49px;background:#fff;border:1px solid #d9e2d9;border-radius:11px;padding:0 15px;flex:1;transition:border-color .18s,box-shadow .18s}
+.searchbox:focus-within{border-color:#689077;box-shadow:0 0 0 3px #d9eadc}
+.searchbox svg{width:19px;height:19px;color:#68796c;flex-shrink:0}
+.searchbox input{border:0;background:none;color:#263d30;width:100%;height:100%;outline:none;font-size:15px;min-width:0}
+.searchbox input::placeholder{color:#6b786f}
+.toolbtn{display:inline-flex;align-items:center;justify-content:center;gap:9px;height:49px;min-width:107px;border-radius:11px;background:#fff;border:1px solid #d9e2d9;color:#344b3c;padding:0 15px;font-size:14px;font-weight:400;white-space:nowrap;transition:background-color .18s,border-color .18s}
+.toolbtn:hover{background:#eff4ee;border-color:#c1d0c3}
+.toolbtn svg{width:17px;height:17px;stroke-width:1.75}
+.filter-panel{background:#fff;border:1px solid var(--border);border-radius:11px;padding:20px;margin:12px 0 0;display:grid;grid-template-columns:1.2fr 1fr 1fr auto;gap:15px;align-items:end}
+.filter-field{display:grid;gap:8px;min-width:0}
+.filter-field label{color:#526359;font-size:13px}
+.filter-field select{height:43px;border:1px solid #d9e2d9;border-radius:8px;padding:0 10px;color:#283d2f;background:#fcfdfb;width:100%;min-width:0;font-size:14px}
+.filter-clear{height:43px;border:0;background:none;color:#365e46;text-decoration:underline;text-underline-offset:4px;font-size:13px;padding:0 5px;white-space:nowrap}
+.list{background:#fff;border:1px solid var(--border);border-radius:13px;overflow:hidden;margin:23px 0 0}
+.entry{position:relative;padding:26px 28px 24px;border-bottom:1px solid #e7ece6;transition:background-color .18s}
+.entry:last-child{border-bottom:0}
+.entry:hover{background:#fcfdfa}
+.entry-line{display:flex;align-items:center;justify-content:space-between;gap:15px}
+.entry-field{font-size:13px;color:#4e6757;letter-spacing:0;font-weight:400}
+.bookmark{display:grid;place-items:center;width:34px;height:34px;margin:-5px -9px -5px 0;border:0;background:transparent;color:#647368;border-radius:8px;flex-shrink:0;transition:background-color .18s,color .18s}
+.bookmark:hover{background:#e8f1e9;color:#244d36}
+.bookmark[aria-pressed="true"]{color:#285a3a}
+.bookmark svg{width:19px;height:19px;stroke-width:1.65}
+.bookmark[aria-pressed="true"] svg{fill:#dfece1}
+.entry h3{font-size:20px;line-height:1.3;font-weight:500;letter-spacing:-.017em;color:#25352b;margin:12px 45px 5px 0}
+.entry-host{font-size:14px;color:#51645a;margin:0;line-height:1.48}
+.entry-summary{font-size:15px;color:#4a5c51;line-height:1.62;max-width:690px;margin:14px 0 0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.entry-bottom{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:20px;flex-wrap:wrap}
+.entry-date{font-size:13px;color:#51655a}
+.entry-date strong{font-weight:500;color:#30513d}
+.entry-actions{display:flex;gap:18px;align-items:center}
+.details-btn{border:0;color:#2a5c40;background:none;font-size:14px;padding:3px 0;font-weight:500}
+.details-btn:hover{text-decoration:underline;text-underline-offset:4px}
+.official{font-size:14px;color:#4a5f50;text-decoration:none;white-space:nowrap}
+.official:hover{text-decoration:underline;text-underline-offset:4px}
+.empty{padding:76px 24px;text-align:center;color:#5c6e61;font-size:15px}
+.empty h3{font-weight:500;font-size:19px;color:#334e3b;margin:0 0 7px}
+.empty p{margin:0;line-height:1.6}
+.loading-row{padding:30px 28px;border-bottom:1px solid var(--border)}
+.loading-row:last-child{border-bottom:0}
+.skeleton{height:16px;border-radius:5px;background:linear-gradient(90deg,#edf0ea,#e4eae3,#edf0ea);background-size:220% 100%;animation:shimmer 1.65s linear infinite}
+.skeleton.short{width:25%;height:12px;margin-bottom:18px}
+.skeleton.medium{width:64%;height:22px;margin-bottom:16px}
+.skeleton.long{width:86%;height:13px}
+@keyframes shimmer{to{background-position-x:-220%}}
+.footnote{margin:28px 0 0;font-size:13px;color:#536358;line-height:1.7;max-width:700px}
+.footnote a{color:#2b5b3d}
+.mobile-scrim{display:none}
+.detail{padding:0;border:0;border-left:1px solid var(--border);margin:0 0 0 auto;width:min(100%,560px);height:100dvh;max-height:100dvh;background:#fff;color:var(--ink);box-shadow:-20px 0 60px #16251b14;overflow:auto;animation:sheet-in .23s ease-out}
+.detail::backdrop{background:#18261c65;backdrop-filter:blur(2px)}
+@keyframes sheet-in{from{transform:translateX(24px);opacity:.7}to{transform:translateX(0);opacity:1}}
+.detail-head{position:sticky;top:0;z-index:2;background:#fffffff2;border-bottom:1px solid #ecf0ea;min-height:73px;display:flex;align-items:center;justify-content:space-between;padding:0 34px;backdrop-filter:blur(12px)}
+.detail-head span{font-size:14px;color:#596b5e}
+.close-detail{border:1px solid #e3eae2;border-radius:10px;background:#fff;width:36px;height:36px;display:grid;place-items:center;color:#385443}
+.close-detail svg{width:18px;height:18px}
+.detail-inner{padding:36px 38px 60px}
+.detail-kicker{font-size:14px;color:#56715d;margin:0 0 15px}
+.detail-inner h2{font-size:31px;line-height:1.22;font-weight:500;letter-spacing:-.03em;margin:0 0 13px}
+.detail-org{margin:0 0 26px;color:#5d6b62;font-size:15px}
+.detail-date{background:#f3f6f1;border-radius:10px;padding:17px 20px;margin:0 0 29px;display:flex;justify-content:space-between;gap:14px;color:#3e5947;font-size:14px}
+.detail-date strong{font-weight:500;color:#284a35;text-align:right}
+.detail-section{border-top:1px solid #e4eae3;padding:22px 0 0;margin-top:22px}
+.detail-section h3{font-size:15px;font-weight:500;color:#314f3c;margin:0 0 9px}
+.detail-section p{font-size:15px;line-height:1.75;color:#485c4e;margin:0;overflow-wrap:anywhere}
+.detail-actions{margin-top:29px;display:flex;gap:11px;flex-wrap:wrap}
+.detail-visit{display:inline-flex;align-items:center;justify-content:center;background:#31563e;color:#fff;text-decoration:none;border-radius:9px;padding:12px 20px;font-size:14px;min-height:45px}
+.detail-visit:hover{background:#26472f}
+.detail-save{background:#fff;color:#385944;border:1px solid #c9d9ca;padding:10px 20px;border-radius:9px;font-size:14px}
+.detail-source{display:block;margin-top:19px;font-size:12px;color:#627267;overflow-wrap:anywhere}
+@media(max-width:1200px){.content{padding:0 35px 70px}}
+@media(max-width:800px){
+.sidebar{width:258px;transform:translateX(-101%);transition:transform .23s ease;box-shadow:20px 0 50px #172e1912}
+.sidebar.is-open{transform:translateX(0)}
+.mobile-scrim{display:block;position:fixed;inset:0;background:#18291d55;z-index:25}
+.main{margin-left:0}
+.content{padding:0 22px 70px}
+.mobile-top{display:flex;align-items:center;justify-content:space-between;min-height:62px;border-bottom:1px solid #e4eae2}
+.mobile-title{font-size:15px;font-weight:500}
+.mobile-open{border:0;background:transparent;padding:9px;margin-left:-9px;color:#334c3b;display:grid;place-items:center}
+.mobile-open svg{width:23px;height:23px}
+.topline{display:none}
+.intro{padding:42px 0 31px}
 }
-document.querySelectorAll(".tab").forEach(b=>b.onclick=()=>{view=b.dataset.view;document.querySelectorAll(".tab").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));render()});
-["q","field","review","sort"].forEach(id=>$(id).addEventListener(id==="q"?"input":"change",render));
-$("export").addEventListener("click",()=>{const keys=["title","discipline","status","deadline","eligibility","funding","source"];const rows=[keys.join(","),...records.map(e=>keys.map(k=>'"'+String(k==="status"?state(e):e[k]??"").replace(/"/g,'""')+'"').join(","))];const blob=new Blob([rows.join("\n")],{type:"text/csv;charset=utf-8"});const url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="competition-atlas.csv";a.click();URL.revokeObjectURL(url)});
-fetch("./data/competitions.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("Data unavailable");return r.json()}).then(data=>{
-records=data.records||[];
-const fields=[...new Set(records.map(e=>e.discipline))].sort();fields.forEach(f=>{const o=document.createElement("option");o.value=f;o.textContent=f;$("field").appendChild(o)});
-$("stats").innerHTML=[["Tracked",records.length],["Call active",records.filter(e=>state(e)==="open").length],["Opening soon",records.filter(e=>state(e)==="upcoming").length],["Reviewed",records.filter(e=>e.reviewed).length]].map(([k,v])=>'<div class="metric"><strong>'+v+'</strong><span>'+k+'</span></div>').join("");
-$("updated").textContent="Research curated "+(data.meta?.curated||"October 2026")+" · daily checks configured";render()
-}).catch(err=>{$("resultCount").textContent="Competition data could not load";$("cards").innerHTML='<div class="empty">The competition dataset is unavailable. Please check the site again or view the GitHub source.</div>';console.error(err)});
-</script></body></html>
+@media(max-width:580px){
+.content{padding:0 17px 65px}
+.intro{padding-top:33px}
+.intro h1{font-size:34px}
+.intro p{font-size:15px}
+.workspace-head h2{font-size:19px}
+.toolbar{gap:8px}
+.toolbtn{min-width:47px;padding:0 11px}
+.toolbtn span{display:none}
+.filter-panel{grid-template-columns:1fr;gap:11px;padding:16px}
+.searchbox{height:47px}
+.toolbtn{height:47px}
+.entry{padding:23px 20px 21px}
+.entry h3{font-size:19px}
+.entry-summary{font-size:15px}
+.entry-bottom{align-items:flex-start}
+.entry-actions{gap:14px}
+.detail-inner{padding:28px 24px 40px}
+.detail-head{padding:0 24px}
+.detail-inner h2{font-size:27px}
+}
+@media(prefers-reduced-motion:reduce){
+*,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;transition-duration:.01ms!important}
+}
+</style>
+</head>
+<body>
+<div class="app">
+<aside class="sidebar" id="sidebar" aria-label="Competition navigation">
+  <a class="brand" href="#browse" aria-label="Competition Atlas">
+    <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4m6-4v4M9 18v4m6-4v4M2 9h4m-4 6h4m12-6h4m-4 6h4"/></svg></span>
+    <span><span class="brand-name" style="display:block">Competition Atlas</span><span class="brand-desc" style="display:block">Micro & nanoelectronics</span></span>
+  </a>
+  <nav class="side-nav" aria-label="Browse competitions">
+    <button class="nav-item" type="button" data-view="open" aria-current="page"><span data-icon="compass"></span><span>Open now</span><span class="nav-count" data-count="open"></span></button>
+    <button class="nav-item" type="button" data-view="upcoming"><span data-icon="calendar"></span><span>Opening soon</span><span class="nav-count" data-count="upcoming"></span></button>
+    <button class="nav-item" type="button" data-view="all"><span data-icon="layers"></span><span>All competitions</span><span class="nav-count" data-count="all"></span></button>
+    <button class="nav-item" type="button" data-view="watch"><span data-icon="clock"></span><span>Future editions</span><span class="nav-count" data-count="watch"></span></button>
+    <button class="nav-item" type="button" data-view="saved"><span data-icon="bookmark"></span><span>Saved</span><span class="nav-count" data-count="saved"></span></button>
+    <button class="nav-item" type="button" data-view="closed"><span data-icon="archive"></span><span>Past editions</span><span class="nav-count" data-count="closed"></span></button>
+  </nav>
+  <div class="side-footer">
+    <a class="side-link" href="https://github.com/aminemons/competitionsnano" target="_blank" rel="noopener noreferrer"><span data-icon="github"></span>GitHub <span aria-hidden="true">↗</span></a>
+    <a class="side-link" href="https://aminemons.github.io/stagesmicroelectronics-scholarships-professors-contacts/" target="_blank" rel="noopener noreferrer"><span data-icon="external"></span>Opportunity Atlas <span aria-hidden="true">↗</span></a>
+    <div class="side-date" id="sideDate">Source checks scheduled daily.<br>Saved items stay in this browser.</div>
+  </div>
+</aside>
+<div class="mobile-scrim" id="mobileScrim" hidden></div>
+<div class="main">
+  <div class="content">
+    <div class="mobile-top"><button class="mobile-open" id="mobileOpen" type="button" aria-label="Open navigation" aria-expanded="false"><span data-icon="menu"></span></button><span class="mobile-title">Competition Atlas</span><span style="width:30px" aria-hidden="true"></span></div>
+    <div class="topline"><span><span class="live-dot" aria-hidden="true"></span>Research updates daily</span></div>
+    <header class="intro"><h1>Find your next competition.</h1><p>Explore IC design, FPGA, semiconductors, sensors, photonics and other international engineering challenges.</p></header>
+    <main id="browse" aria-label="Competitions">
+      <div class="workspace-head"><h2 id="viewTitle">Open competitions</h2><span class="subcount" id="resultCount" aria-live="polite">Loading…</span></div>
+      <div class="toolbar">
+        <label class="searchbox"><span data-icon="search"></span><input id="search" type="search" aria-label="Search competitions" placeholder="Search competitions, ASIC, FPGA, MEMS…" autocomplete="off"></label>
+        <button class="toolbtn" id="filterToggle" type="button" aria-controls="filterPanel" aria-expanded="false"><span data-icon="sliders"></span><span>Filters</span></button>
+        <button class="toolbtn" id="export" type="button"><span data-icon="download"></span><span>Export</span></button>
+      </div>
+      <div class="filter-panel" id="filterPanel" hidden>
+        <div class="filter-field"><label for="field">Technical field</label><select id="field"><option value="">All fields</option></select></div>
+        <div class="filter-field"><label for="review">Source review</label><select id="review"><option value="">Any</option><option value="true">Rules reviewed</option><option value="false">Needs review</option></select></div>
+        <div class="filter-field"><label for="sort">Order</label><select id="sort"><option value="deadline">Nearest deadline</option><option value="name">Name A–Z</option><option value="field">Technical field</option></select></div>
+        <button class="filter-clear" id="clearFilters" type="button">Clear filters</button>
+      </div>
+      <div class="list" id="results" aria-live="off">
+        <div class="loading-row"><div class="skeleton short"></div><div class="skeleton medium"></div><div class="skeleton long"></div></div>
+        <div class="loading-row"><div class="skeleton short"></div><div class="skeleton medium"></div><div class="skeleton long"></div></div>
+        <div class="loading-row"><div class="skeleton short"></div><div class="skeleton medium"></div><div class="skeleton long"></div></div>
+      </div>
+      <p class="footnote">Dates and eligibility are edition-specific. Check the official rules before applying, especially for Algerian applicants in a five-year engineering programme. A research lead is not a confirmed open call.</p>
+    </main>
+  </div>
+</div>
+</div>
+<dialog class="detail" id="detail" aria-labelledby="detailTitle">
+  <div class="detail-head"><span>Competition details</span><button class="close-detail" id="closeDetail" aria-label="Close details"><span data-icon="close"></span></button></div>
+  <div class="detail-inner" id="detailContent"></div>
+</dialog>
+<script>
+"use strict";
+const ICONS={
+  compass:'<circle cx="12" cy="12" r="9"/><path d="m15.6 8.4-2.5 4.7-4.7 2.5 2.5-4.7z"/>',
+  calendar:'<rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4m10-4v4M3 10h18"/>',
+  layers:'<rect x="3" y="4" width="18" height="4" rx="1"/><rect x="3" y="10" width="18" height="4" rx="1"/><rect x="3" y="16" width="18" height="4" rx="1"/>',
+  clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/>',
+  bookmark:'<path d="M6 3.75A1.75 1.75 0 0 1 7.75 2h8.5A1.75 1.75 0 0 1 18 3.75V22l-6-4-6 4z"/>',
+  archive:'<rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 9v11h14V9M10 13h4"/>',
+  github:'<path d="M9 19c-4 1-4-2-6-2m12 4v-3.4a3 3 0 0 0-.8-2.3c2.7-.3 5.6-1.3 5.6-6A4.6 4.6 0 0 0 18.6 6 4.3 4.3 0 0 0 18.5 3s-1.1-.3-3.5 1.8a12 12 0 0 0-6 0C6.6 2.7 5.5 3 5.5 3A4.3 4.3 0 0 0 5.4 6 4.6 4.6 0 0 0 4.2 9.3c0 4.7 2.9 5.7 5.6 6A3 3 0 0 0 9 17.6V21"/>',
+  external:'<path d="M14 4h6v6m0-6-9 9"/><path d="M20 13v5a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h5"/>',
+  search:'<circle cx="10.7" cy="10.7" r="6.7"/><path d="m16 16 5 5"/>',
+  sliders:'<path d="M4 7h9m4 0h3M4 17h3m4 0h9"/><circle cx="15" cy="7" r="2"/><circle cx="9" cy="17" r="2"/>',
+  download:'<path d="M12 3v13m-5-5 5 5 5-5M4 18v3h16v-3"/>',
+  menu:'<path d="M4 7h16M4 12h16M4 17h16"/>',
+  close:'<path d="M5 5l14 14M19 5 5 19"/>'
+};
+function svg(name){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'+(ICONS[name]||'')+'</svg>'}
+document.querySelectorAll('[data-icon]').forEach(el=>{el.innerHTML=svg(el.dataset.icon)});
+const $=id=>document.getElementById(id);
+const esc=value=>String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));
+const safeLink=url=>{try{const u=new URL(url);return u.protocol==="https:"?u.href:"#"}catch{return "#"}};
+const today=()=>{const t=new Date();return t.getFullYear()+"-"+String(t.getMonth()+1).padStart(2,"0")+"-"+String(t.getDate()).padStart(2,"0")};
+const current=e=>e.deadline&&e.deadline<today()?"closed":e.status==="closed"?"closed":e.status==="open"&&e.reviewed?"open":e.status==="upcoming"&&e.reviewed?"upcoming":"watch";
+const fmt=date=>date?new Date(date+"T12:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"short",year:"numeric"}):"Date not announced";
+const when=e=>current(e)==="watch"?"Next dates to confirm":current(e)==="closed"?"Ended "+fmt(e.deadline):e.deadline?"Deadline "+fmt(e.deadline):"Deadline to confirm";
+const key=e=>e.source+"|"+e.title;
+const category=e=>e.discipline||"Electronics";
+const stateTitles={open:"Open competitions",upcoming:"Opening soon",all:"All competitions",watch:"Future editions",saved:"Saved competitions",closed:"Past editions"};
+let records=[],view="open",saved=new Set(),selected=null;
+try{saved=new Set(JSON.parse(localStorage.getItem("competition-atlas-saved")||"[]"))}catch(e){}
+function setSaved(e){
+ const k=key(e);if(saved.has(k))saved.delete(k);else saved.add(k);
+ try{localStorage.setItem("competition-atlas-saved",JSON.stringify([...saved]))}catch(e){}
+ updateCounts();render();
+ if(selected&&key(selected)===k)fillDetail(selected);
+}
+function updateCounts(){
+ const counts={all:records.length,saved:records.filter(e=>saved.has(key(e))).length,open:0,upcoming:0,watch:0,closed:0};
+ records.forEach(e=>{counts[current(e)]++});
+ Object.entries(counts).forEach(([k,v])=>document.querySelectorAll('[data-count="'+k+'"]').forEach(el=>{el.textContent=v}));
+}
+function match(e,q){return [e.title,e.organizer,e.discipline,e.requirements,e.eligibility,e.project,e.funding].join(" ").toLowerCase().includes(q)}
+function recordRow(e,i){
+ const s=current(e),k=key(e),isSaved=saved.has(k);
+ const summary=e.requirements||e.project||"Refer to the official organizer page for details.";
+ const host=e.organizer&&e.organizer.trim().toLowerCase()!==e.title.trim().toLowerCase()?'<p class="entry-host">'+esc(e.organizer)+'</p>':"";
+ return '<article class="entry">'+
+   '<div class="entry-line"><span class="entry-field">'+esc(category(e))+'</span><button class="bookmark" type="button" data-save="'+i+'" aria-pressed="'+isSaved+'" aria-label="'+(isSaved?"Remove saved competition":"Save competition")+'">'+svg("bookmark")+'</button></div>'+
+   '<h3>'+esc(e.title)+'</h3>'+host+
+   '<p class="entry-summary">'+esc(summary)+'</p>'+
+   '<div class="entry-bottom"><span class="entry-date">'+(s==="open"?'<strong>'+esc(when(e))+'</strong>':esc(when(e)))+'</span><div class="entry-actions"><button class="details-btn" type="button" data-details="'+i+'">Details</button><a class="official" href="'+esc(safeLink(e.source))+'" rel="noopener noreferrer" target="_blank">Official site ↗</a></div></div></article>';
+}
+function render(){
+ const q=$("search").value.trim().toLowerCase(),field=$("field").value,review=$("review").value,sort=$("sort").value;
+ let filtered=records.map((e,i)=>({e,i})).filter(({e})=>(view==="all"||view==="saved"&&saved.has(key(e))||current(e)===view)&&(!field||category(e)===field)&&(!review||String(Boolean(e.reviewed))===review)&&(!q||match(e,q)));
+ filtered.sort((a,b)=>sort==="name"?a.e.title.localeCompare(b.e.title):sort==="field"?category(a.e).localeCompare(category(b.e)):((a.e.deadline||"9999-12-31").localeCompare(b.e.deadline||"9999-12-31")||a.e.title.localeCompare(b.e.title)));
+ $("viewTitle").textContent=stateTitles[view];
+ $("resultCount").textContent=filtered.length+(filtered.length===1?" competition":" competitions");
+ $("results").innerHTML=filtered.length?filtered.map(({e,i})=>recordRow(e,i)).join(""):'<div class="empty"><h3>No competitions found</h3><p>Try a different search, or clear your filters.</p></div>';
+ updateCounts();
+}
+function fillDetail(e){
+ selected=e;
+ const blocks=[
+ ["What to submit",e.requirements],
+ ["Who can participate",e.eligibility],
+ ["Teams & format",e.scope||e.format],
+ ["Awards & travel",e.funding],
+ ["Project direction",e.project],
+ ["Points to confirm",e.risk],
+ ["Verification notes",e.evidence]
+ ];
+ $("detailContent").innerHTML='<p class="detail-kicker">'+esc(category(e))+'</p>'+
+ '<h2 id="detailTitle">'+esc(e.title)+'</h2>'+
+ '<p class="detail-org">'+esc(e.organizer||"Competition organizer")+'</p>'+
+ '<div class="detail-date"><span>Submission</span><strong>'+esc(when(e))+'</strong></div>'+
+ blocks.filter(x=>x[1]).map(x=>'<section class="detail-section"><h3>'+esc(x[0])+'</h3><p>'+esc(x[1])+'</p></section>').join("")+
+ '<div class="detail-actions"><a class="detail-visit" href="'+esc(safeLink(e.source))+'" target="_blank" rel="noopener noreferrer">Open official source ↗</a><button class="detail-save" id="detailSave" type="button">'+(saved.has(key(e))?"Remove from saved":"Save competition")+'</button></div>'+
+ '<span class="detail-source">Source: '+esc(e.source)+'</span>';
+ $("detailSave").onclick=()=>setSaved(e);
+}
+function closeNav(){
+ $("sidebar").classList.remove("is-open");$("mobileScrim").hidden=true;$("mobileOpen").setAttribute("aria-expanded","false");
+}
+function openNav(){
+ $("sidebar").classList.add("is-open");$("mobileScrim").hidden=false;$("mobileOpen").setAttribute("aria-expanded","true");
+}
+$("mobileOpen").onclick=()=>$("sidebar").classList.contains("is-open")?closeNav():openNav();
+$("mobileScrim").onclick=closeNav;
+document.querySelectorAll(".nav-item").forEach(btn=>btn.addEventListener("click",()=>{
+ view=btn.dataset.view;
+ document.querySelectorAll(".nav-item").forEach(el=>el.removeAttribute("aria-current"));
+ btn.setAttribute("aria-current","page");closeNav();render();
+ if(window.innerWidth<801)$("browse").scrollIntoView({block:"start",behavior:"smooth"});
+}));
+$("search").addEventListener("input",render);
+["field","review","sort"].forEach(id=>$(id).addEventListener("change",render));
+$("filterToggle").onclick=()=>{
+ const expanded=$("filterToggle").getAttribute("aria-expanded")==="true";
+ $("filterPanel").hidden=expanded;$("filterToggle").setAttribute("aria-expanded",String(!expanded));
+};
+$("clearFilters").onclick=()=>{$("field").value="";$("review").value="";$("sort").value="deadline";$("search").value="";render()};
+$("results").addEventListener("click",ev=>{
+ const save=ev.target.closest("[data-save]"),details=ev.target.closest("[data-details]");
+ if(save){setSaved(records[Number(save.dataset.save)]);return}
+ if(details){fillDetail(records[Number(details.dataset.details)]);$("detail").showModal()}
+});
+$("closeDetail").onclick=()=>$("detail").close();
+$("detail").addEventListener("click",ev=>{if(ev.target===$("detail"))$("detail").close()});
+document.addEventListener("keydown",ev=>{
+ if(ev.key==="Escape")closeNav();
+ if(ev.key==="/"&&!ev.ctrlKey&&!ev.metaKey&&!ev.altKey&&!["INPUT","TEXTAREA","SELECT"].includes(document.activeElement.tagName)&&!$("detail").open){ev.preventDefault();$("search").focus()}
+});
+$("export").addEventListener("click",()=>{
+ if(!records.length)return;
+ const cols=["title","organizer","discipline","status","deadline","eligibility","funding","source"];
+ const rows=[cols.join(","),...records.map(e=>cols.map(col=>'"'+String(col==="status"?current(e):e[col]??"").replace(/"/g,'""')+'"').join(","))];
+ const blob=new Blob(["\uFEFF"+rows.join("\r\n")],{type:"text/csv;charset=utf-8"});
+ const url=URL.createObjectURL(blob),a=document.createElement("a");a.href=url;a.download="competition-atlas.csv";a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+});
+fetch("./data/competitions.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw Error("HTTP "+r.status);return r.json()}).then(data=>{
+ records=Array.isArray(data.records)?data.records:[];
+ [...new Set(records.map(category))].sort().forEach(field=>{const opt=document.createElement("option");opt.value=field;opt.textContent=field;$("field").appendChild(opt)});
+ const stamp=data.meta?.last_automatic_check||data.meta?.curated;
+ if(stamp)$("sideDate").innerHTML="Research checked "+esc(fmt(stamp))+".<br>Saved items stay in this browser.";
+ render();
+}).catch(err=>{
+ console.error("Unable to load competition records:",err);
+ $("resultCount").textContent="Unavailable";
+ $("results").innerHTML='<div class="empty"><h3>Could not load competitions</h3><p>The competition data is currently unavailable. Check the GitHub repository for the latest research.</p></div>';
+});
+</script>
+</body>
+</html>
