@@ -11,7 +11,7 @@
       "Electronic and optoelectronic materials",
       "Signal processing and AI"
     ],
-    "last_automatic_check": "2026-10-24"
+    "last_automatic_check": "2026-10-25"
   },
   "records": [
     {
@@ -21,7 +21,7 @@
       "discipline": "FPGA & embedded",
       "source": "https://www.microchip.com/en-us/campaigns/polarfire-fpga-design-contest",
       "deadline": "2026-10-24",
-      "status": "open",
+      "status": "closed",
       "format": "Worldwide · online",
       "eligibility": "Global engineers, students and innovators; confirm Algeria kit-shipping and official legal terms before applying.",
       "requirements": "Proposal by 24 Oct 2026; shortlisted projects receive FPGA platform; design paper + video due Mar 2027.",
