@@ -1,23 +1,20 @@
 {
-  "checked_utc": "2026-11-04",
+  "checked_utc": "2026-11-05",
   "sources_total": 52,
   "reachable": 43,
   "blocked": 0,
   "sources": {
     "https://2026.ieeenano.org/student-design-competition/": {
-      "status": "reachable",
-      "http": 200,
-      "final_url": "https://2026.ieeenano.org/student-design-competition/",
-      "sha256": "a9a548ed9532fd57",
-      "checked_utc": "2026-11-04",
-      "content_type": "text/html; charset=UTF-8"
+      "status": "unreachable",
+      "error": "The read operation timed out",
+      "checked_utc": "2026-11-05"
     },
     "https://2027.emcsipi.org/programs/student-hardware-competition/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://2027.emcsipi.org/programs/student-hardware-competition/",
-      "sha256": "bbcefaec69d03101",
-      "checked_utc": "2026-11-04",
+      "sha256": "5b1a7929bcb22e89",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://acm-ieee-sec.org/2026/student_innovation_challenge.php": {
@@ -25,7 +22,7 @@
       "http": 200,
       "final_url": "https://acm-ieee-sec.org/2026/student_innovation_challenge.php",
       "sha256": "ed9e23471a2b6e54",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://blog.janestreet.com/protocol-emulator-asic-competition/": {
@@ -33,23 +30,23 @@
       "http": 200,
       "final_url": "https://blog.janestreet.com/protocol-emulator-asic-competition/",
       "sha256": "ea7b5391c587e7e4",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=utf-8"
     },
     "https://easyeda.com/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://easyeda.com/",
-      "sha256": "27e5cfddb320e38b",
-      "checked_utc": "2026-11-04",
+      "sha256": "f73c14737a063584",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://ectc.net/ectc-competition/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://ectc.net/ectc-competition/",
-      "sha256": "75feedf96692fe6b",
-      "checked_utc": "2026-11-04",
+      "sha256": "843e44493269d022",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://engagestandards.ieee.org/cybersecurity-hackathon-2027": {
@@ -57,54 +54,57 @@
       "http": 200,
       "final_url": "https://engagestandards.ieee.org/cybersecurity-hackathon-2027",
       "sha256": "307863cb9e103720",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=utf-8"
     },
     "https://engineering.rice.edu/rice360/": {
       "status": "unreachable",
       "error": "HTTP Error 404: Not Found",
-      "checked_utc": "2026-11-04"
+      "checked_utc": "2026-11-05"
     },
     "https://enotice.vtools.ieee.org/public/205447": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://enotice.vtools.ieee.org/public/205447",
-      "sha256": "6f631e9b077b6667",
-      "checked_utc": "2026-11-04",
+      "sha256": "04b44b0ac6d7b341",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=utf-8"
     },
     "https://fleps2026.ieee.org/": {
       "status": "unreachable",
       "error": "<urlopen error [Errno -2] Name or service not known>",
-      "checked_utc": "2026-11-04"
+      "checked_utc": "2026-11-05"
     },
     "https://fossee.in/": {
-      "status": "unreachable",
-      "error": "The read operation timed out",
-      "checked_utc": "2026-11-04"
+      "status": "reachable",
+      "http": 200,
+      "final_url": "https://fossee.in/",
+      "sha256": "1ab6d0d1ecbcc88d",
+      "checked_utc": "2026-11-05",
+      "content_type": "text/html; charset=utf-8"
     },
     "https://iccad.com/2026/cadathlon-at-iccad-2026": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://iccad.com/2026/cadathlon-at-iccad-2026",
-      "sha256": "3d6673b6b6d7e226",
-      "checked_utc": "2026-11-04",
+      "sha256": "17ad7dfd422cb59d",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=utf-8"
     },
     "https://ieee-biosensors.org/2026/awards": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://ieee-biosensors.org/2026/awards",
-      "sha256": "93a59c68038fc1e5",
-      "checked_utc": "2026-11-04",
+      "sha256": "4fe6c5726b67abac",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=utf-8"
     },
     "https://ieee-cas.org/2027-student-design-competition-details-and-official-rules": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://ieee-cas.org/2027-student-design-competition-details-and-official-rules",
-      "sha256": "e7645f0a827ff5b7",
-      "checked_utc": "2026-11-04",
+      "sha256": "22af921ff36167b2",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://ieee-edtm.org/": {
@@ -112,39 +112,39 @@
       "http": 200,
       "final_url": "https://ieee-edtm.org/",
       "sha256": "6004ad7556fdc0f6",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html"
     },
     "https://ieee-iedm.org/submission-details/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://ieee-iedm.org/submission-details/",
-      "sha256": "4352d027c311c4b7",
-      "checked_utc": "2026-11-04",
+      "sha256": "f2188145445b47a9",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://ieee-ius.org/2026/authors/call-for-papers": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://ieee-ius.org/2026/authors/call-for-papers",
-      "sha256": "b9c54ed2223a1a6d",
-      "checked_utc": "2026-11-04",
+      "sha256": "d2cff231710eef97",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=utf-8"
     },
     "https://ieee-sensors.org/myosa/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://ieee-sensors.org/myosa/",
-      "sha256": "fd52d35d661d9d0e",
-      "checked_utc": "2026-11-04",
+      "sha256": "f779d2f9f58ca01f",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://ieeeaps.org/education/research-and-travel-grants": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://ieeeaps.org/education/research-and-travel-grants",
-      "sha256": "fc6b9f9e69d39f32",
-      "checked_utc": "2026-11-04",
+      "sha256": "dc4743b83e0dc4cc",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=utf-8"
     },
     "https://ieeenems2027.com/pages/awards": {
@@ -152,15 +152,15 @@
       "http": 200,
       "final_url": "https://ieeenems2027.com/pages/awards",
       "sha256": "9f22e9063bc75250",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html"
     },
     "https://ieeer8.org/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://ieeer8.org/",
-      "sha256": "c75b2831fa6d0ca4",
-      "checked_utc": "2026-11-04",
+      "sha256": "464e85b2dabda236",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://ieomsociety.org/qatar2027/competitions/": {
@@ -168,7 +168,7 @@
       "http": 200,
       "final_url": "https://ieomsociety.org/qatar2027/competitions/",
       "sha256": "7f0ac979f596a249",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://ims-ieee.org/technical-program-event-view/56": {
@@ -176,7 +176,7 @@
       "http": 200,
       "final_url": "https://ims-ieee.org/technical-program-event-view/56",
       "sha256": "641418ae9efa8308",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://ims-ieee.org/technicalpapercompetitions": {
@@ -184,63 +184,63 @@
       "http": 200,
       "final_url": "https://ims-ieee.org/technicalpapercompetitions",
       "sha256": "8500c3dbe413e2e8",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://oe-a.org/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://oe-a.org/",
-      "sha256": "1c3d464b22cbea8c",
-      "checked_utc": "2026-11-04",
+      "sha256": "8a43a400ca560383",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://radarconf2027.org/student-paper-competition/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://radarconf2027.org/student-paper-competition/",
-      "sha256": "58a280450bd50bc1",
-      "checked_utc": "2026-11-04",
+      "sha256": "8ddda345f75cc1cb",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://semifoundation.org/chip-the-future-challenge/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://semifoundation.org/chip-the-future-challenge/",
-      "sha256": "c061c7611461b628",
-      "checked_utc": "2026-11-04",
+      "sha256": "e7b018ba5f53c2eb",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://signalprocessingsociety.org/community-involvement/signal-processing-cup-draft": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://signalprocessingsociety.org/community-involvement/signal-processing-cup-draft",
-      "sha256": "58a21b33fb6ed880",
-      "checked_utc": "2026-11-04",
+      "sha256": "8526486bc8492b99",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://sscs.ieee.org/education/sscs-student-circuit-contest/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://sscs.ieee.org/education/sscs-student-circuit-contest/",
-      "sha256": "296f49ef3be3844b",
-      "checked_utc": "2026-11-04",
+      "sha256": "b003c866d74719dd",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://sscs.ieee.org/membership/awards/ieee-sscs-code-a-chip-travel-grant-awards/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://sscs.ieee.org/membership/awards/ieee-sscs-code-a-chip-travel-grant-awards/",
-      "sha256": "03499664a586380d",
-      "checked_utc": "2026-11-04",
+      "sha256": "6e65b20a265f9124",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://sscs.ieee.org/technical-committees/tc-ose/sscs-pico-design-contest/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://sscs.ieee.org/technical-committees/tc-ose/sscs-pico-design-contest/",
-      "sha256": "44cdf75fbc64028d",
-      "checked_utc": "2026-11-04",
+      "sha256": "f2d091e4f85a1e2c",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://students.ieee.org/student-opportunities/contests-for-students/": {
@@ -248,23 +248,23 @@
       "http": 200,
       "final_url": "https://students.ieee.org/student-opportunities/contests-for-students/",
       "sha256": "723255cc97a2e763",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://tinytapeout.com/competitions/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://tinytapeout.com/competitions/",
-      "sha256": "f2bb9aefc9828827",
-      "checked_utc": "2026-11-04",
+      "sha256": "6f987d486675fbfa",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=utf-8"
     },
     "https://vlsid.org/call-for-tapeout-contest/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://vlsid.org/call-for-tapeout-contest/",
-      "sha256": "c0f2ae9ea523315c",
-      "checked_utc": "2026-11-04",
+      "sha256": "592425211519c25d",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://www.a-sscc2026.org/": {
@@ -272,36 +272,36 @@
       "http": 200,
       "final_url": "https://www.a-sscc2026.org/",
       "sha256": "be3cce843ded5035",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://www.amd.com/en/corporate/university-program/design-contests.html": {
       "status": "unreachable",
       "error": "The read operation timed out",
-      "checked_utc": "2026-11-04"
+      "checked_utc": "2026-11-05"
     },
     "https://www.aspdac.com/aspdac2027/cfd/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.aspdac.com/aspdac2027/cfd/",
       "sha256": "5a463f818d55aec3",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://www.hackster.io/contests/infineon-boss-battle": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.hackster.io/contests/infineon-boss-battle",
-      "sha256": "af11b73d764397ef",
-      "checked_utc": "2026-11-04",
+      "sha256": "d2168cf8428a022d",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=utf-8"
     },
     "https://www.hackster.io/contests/sustain-the-system/overview": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.hackster.io/contests/sustain-the-system/overview",
-      "sha256": "2d7754c2aa40ab17",
-      "checked_utc": "2026-11-04",
+      "sha256": "ef3db0f9c1b437e7",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=utf-8"
     },
     "https://www.huawei.com/minisite/ict-competition-2025-2026-global/en/": {
@@ -309,7 +309,7 @@
       "http": 200,
       "final_url": "https://www.huawei.com/minisite/ict-competition-2025-2026-global/en/",
       "sha256": "aaad771ac4f4f138",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html"
     },
     "https://www.iccad-contest.org/": {
@@ -317,72 +317,72 @@
       "http": 200,
       "final_url": "https://www.iccad-contest.org/",
       "sha256": "9d2c57064ead5642",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=utf-8"
     },
     "https://www.ieee-array.org/student-competition": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.ieee-array.org/student-competition",
-      "sha256": "ba426469642bc9b7",
-      "checked_utc": "2026-11-04",
+      "sha256": "f48f307d20b2c482",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html;charset=utf-8"
     },
     "https://www.ieee-pels.org/membership/international-future-energy-challenge/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.ieee-pels.org/membership/international-future-energy-challenge/",
-      "sha256": "f33cc6ffa6ab26a9",
-      "checked_utc": "2026-11-04",
+      "sha256": "3f32f4fe1a9fa8cc",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://www.ieee-pels.org/membership/student-competitions/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.ieee-pels.org/membership/student-competitions/",
-      "sha256": "abc0dc1e04fb82fd",
-      "checked_utc": "2026-11-04",
+      "sha256": "db00c1c4617ce6c3",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://www.imaps.org/": {
       "status": "unreachable",
       "error": "HTTP Error 403: Forbidden",
-      "checked_utc": "2026-11-04"
+      "checked_utc": "2026-11-05"
     },
     "https://www.iquhack.org/": {
       "status": "unreachable",
       "error": "<urlopen error [Errno -2] Name or service not known>",
-      "checked_utc": "2026-11-04"
+      "checked_utc": "2026-11-05"
     },
     "https://www.microchip.com/en-us/campaigns/polarfire-fpga-design-contest": {
       "status": "unreachable",
       "error": "HTTP Error 403: Forbidden",
-      "checked_utc": "2026-11-04"
+      "checked_utc": "2026-11-05"
     },
     "https://www.mu-sic.tohoku.ac.jp/ican/ican2026/summary.html": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.mu-sic.tohoku.ac.jp/ican/ican2026/summary.html",
       "sha256": "30bf19d62022c5b7",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://www.nxp.com/support/microsites/cup/cup%3ACUP-NXPCUP": {
       "status": "unreachable",
       "error": "HTTP Error 404: Not Found",
-      "checked_utc": "2026-11-04"
+      "checked_utc": "2026-11-05"
     },
     "https://www.pcbway.com/contest/": {
       "status": "unreachable",
       "error": "HTTP Error 404: Not Found",
-      "checked_utc": "2026-11-04"
+      "checked_utc": "2026-11-05"
     },
     "https://www.radiowirelessweek.org/": {
       "status": "reachable",
       "http": 200,
       "final_url": "https://www.radiowirelessweek.org/",
-      "sha256": "5f526c1610f887b0",
-      "checked_utc": "2026-11-04",
+      "sha256": "8806c5bfc8bf2117",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     },
     "https://www.vlsisymposium.org/about.html": {
@@ -390,7 +390,7 @@
       "http": 200,
       "final_url": "https://www.vlsisymposium.org/about.html",
       "sha256": "4c563083a5914c2b",
-      "checked_utc": "2026-11-04",
+      "checked_utc": "2026-11-05",
       "content_type": "text/html; charset=UTF-8"
     }
   }
